@@ -17,7 +17,7 @@ body {
   color: white;
   background-image: linear-gradient(115deg,
     hsla(50, 20%, 28%, 0.8),
-    hsla(240, 9%, 60%, 0.7)), url(../img/bg.jpg);
+    hsla(240, 9%, 60%, 0.7)), url(./img/bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
