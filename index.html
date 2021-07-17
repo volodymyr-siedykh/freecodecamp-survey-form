@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header class="header">
+      <div class="container">
+        <h1 id="title">Developer Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us understand your skills</p>
+      </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <form action="#" class="form" id="survey-form">
+        <div class="form__group">
+          <label for="name" id="name-label">Name</label>
+          <input name="name" id="name" class="form__input" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form__group">
+          <label for="email" id="email-label">Email</label>
+          <input class="form__input" type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form__group">
+          <label for="number" id="number-label">Age</label>
+          <input class="form__input" type="number" min="18" max="99" id="number" name="number" placeholder="Enter your age" required>
+        </div>
+        <div class="form__group">
+          <p>Job type</p>
+          <select name="type" id="dropdown">
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Contract">Contract</option>
+            <option value="Internship">Internship</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <p>Choose your experience</p>
+          <label>
+            <input class="form__radio" type="radio" name="exp" value="1 year" checked> 1 year
+          </label>
+          <label>
+            <input class="form__radio" type="radio" name="exp" value="1 year" checked> 2 year
+          </label>
+          <label>
+            <input class="form__radio" type="radio" name="exp" value="1 year" checked> 3 year
+          </label>
+        </div>
+        <div class="form__group">
+          <p>What is your favorite programming language? <span>(Check all that apply)</span></p>
+          <label>
+            <input class="form__checkbox" type="checkbox" name="lang" value="JavaScript"> JavaScript
+          </label>
+          <label>
+            <input class="form__checkbox" type="checkbox" name="lang" value="Pyton"> Pyton
+          </label>
+          <label>
+            <input class="form__checkbox" type="checkbox" name="lang" value="C++"> C++
+          </label>
+          <label>
+            <input class="form__checkbox" type="checkbox" name="lang" value="PHP"> PHP
+          </label>
+          <label>
+            <input class="form__checkbox" type="checkbox" name="lang" value="JAVA"> JAVA
+          </label>
+        </div>
+        <div class="form__group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="form__textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="form__btn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
